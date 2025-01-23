@@ -1,0 +1,3 @@
+This repository demonstrates a common issue in React Router v6 where a catch-all route (`/*`) placed before other routes in the `Routes` component prevents those other routes from working correctly.  The problem is that the catch-all route will match *any* path, effectively intercepting all navigation attempts.
+
+The solution involves simply moving the catch-all route to the end of the `Routes` definition, ensuring it's only used as a fallback when no other route matches.
